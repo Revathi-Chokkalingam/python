@@ -1,24 +1,15 @@
 #include <stdio.h>
 
-int main(void) 
-{
-	int n,k,i,len;
-	scanf("%d %d",&n,&k);
-	if(n>k)
+int main(void) {
+	int n,m,o,i;
+	scanf("%d %d",&n,&m);
+	for(i=1;i<=n;i++)
 	{
-		len=n;
-	}
-	else
-	{
-		len=k;
-	}
-	for(i=len;i>=2;i--)
-	{
-		if(n%i==0 && k%i==0)
+		if(n%i==0 && m%i==0)
 		{
-			printf("%d",i);		
+			o=i;
 		}
 	}
-
+	printf("%d",o);
 	return 0;
 }
