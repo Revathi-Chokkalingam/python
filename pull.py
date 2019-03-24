@@ -1,12 +1,12 @@
-a,b=raw_input().split()
-a=int(a)
-b=int(b)
+x,y=raw_input().split()
+x=int(x)
+y=int(y)
 l=[]
 s=0
 pos=[]
 oy=[]
 ui=[]
-for i in range(0,a):
+for i in range(0,x):
     a=raw_input().split()
     l.append(a)
 for i in range(0,len(l)):
@@ -25,8 +25,8 @@ for i in range(0,len(l)):
             break
         else:
             s=s+1
-    if s==b:
-        for z in range(0,b):
+    if s==y:
+        for z in range(0,y):
             pos.append(t[z])
         oy.append(pos)
         pos=[]
