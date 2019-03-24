@@ -1,14 +1,14 @@
-x,y=raw_input().split()
-x=int(x)
-y=int(y)
+a,b=raw_input().split()
+a=int(a)
+b=int(b)
 l=[]
 s=0
 pos=[]
 oy=[]
 ui=[]
-for i in range(0,x):
-    x=raw_input().split()
-    l.append(x)
+for i in range(0,a):
+    a=raw_input().split()
+    l.append(a)
 for i in range(0,len(l)):
     k=l[i]
     t=l[i]
@@ -25,8 +25,8 @@ for i in range(0,len(l)):
             break
         else:
             s=s+1
-    if s==y:
-        for z in range(0,y):
+    if s==b:
+        for z in range(0,b):
             pos.append(t[z])
         oy.append(pos)
         pos=[]
